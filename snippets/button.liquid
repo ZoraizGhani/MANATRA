@@ -1,0 +1,54 @@
+{%- doc -%}
+  Intended for use in a block similar to the button block.
+
+  @param {string} link - link to render
+  @param {object} [block] - The block
+
+  @example
+  {% render 'button', link: '/collections/all' %}
+{%- enddoc -%}
+
+{% assign block_settings = block.settings %}
+
+<a
+  {% if link == blank %}
+    role="link"
+    aria-disabled="true"
+  {% else %}
+    href="{{ link }}"
+  {% endif %}
+  class="
+    size-style buttons
+    {{ block_settings.style_class }}
+    {{ block_settings.style_class }}--{{ block.id }}
+  "
+  style="{% render 'size-style', settings: block_settings %}"
+  {%- if block_settings.open_in_new_tab -%}
+    target="_blank"
+    rel="noopener noreferrer"
+  {%- endif -%}
+  {{ block.shopify_attributes }}
+>
+  {{ block_settings.label }}   <svg width="65" height="63" viewBox="0 0 65 63" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <rect width="52.4058" height="53.2852" transform="matrix(-0.977796 -0.209561 0.246368 -0.969176 51.2422 62.625)" fill="url(#pattern0_2236_252)"/>
+    <defs>
+    <pattern id="pattern0_2236_252" patternContentUnits="objectBoundingBox" width="1" height="1">
+    <use xlink:href="#image0_2236_252" transform="matrix(0.01 0 0 0.00983496 0 0.00825205)"/>
+    </pattern>
+    <image id="image0_2236_252" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+    </defs>
+    </svg>
+    
+</a>
+
+{% stylesheet %}
+  .link {
+    text-decoration: none;
+    text-decoration-color: currentcolor;
+
+    &:hover {
+      color: var(--color-primary-hover);
+      text-decoration-color: transparent;
+    }
+  }
+{% endstylesheet %}
