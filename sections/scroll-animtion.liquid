@@ -1,0 +1,353 @@
+{% schema %}
+{
+  "name": "Product Benefits Scroll",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Product Benefits"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "can_image_1",
+      "label": "Can Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "can_image_2",
+      "label": "Can Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "can_image_3",
+      "label": "Can Image 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "can_image_4",
+      "label": "Can Image 4"
+    },
+    {
+      "type": "image_picker",
+      "id": "can_image_5",
+      "label": "Can Image 5"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Benefit Card",
+      "limit": 5,
+      "settings": [
+        { "type": "image_picker", "id": "icon", "label": "Card Icon" },
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "color", "id": "bg_color", "label": "Background Color", "default": "#2b2b2b" },
+        { "type": "image_picker", "id": "bg_image", "label": "Background Image (Optional)" },
+        { "type": "url", "id": "link", "label": "Button Link" },
+        { "type": "text", "id": "button_text", "label": "Button Text", "default": "Learn more" }
+      ]
+    }
+  ],
+  "max_blocks": 5,
+  "presets": [
+    {
+      "name": "Product Benefits Scroll"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+#benefits-{{ section.id }} {
+  position: relative;
+  height: 500vh;
+  background: url({{ section.settings.background_image | image_url }}) center/cover no-repeat;
+}
+.benefit-card.active.freshactive{
+ 
+  background: radial-gradient(158.17% 243.95% at 46.27% 13.94%, #000000 0%, #000000 29.81%, rgba(0, 0, 0, 0.3) 68.27%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+  linear-gradient(141.89deg, rgba(255, 255, 255, 0.2) 2.65%, rgba(255, 255, 255, 0) 44.8%) !important;
+  
+    background-size:cover;
+   
+
+
+}
+.benefits-inner {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.benefits-heading {
+  position: absolute;
+  top: 60px;
+  font-size: 105px;
+
+  letter-spacing: -4px;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+}
+
+.can-wrapper {
+  position: relative;
+  max-width: 1315px !important;
+  width:100%;
+}
+
+.can-img  {
+  width: 550px;
+  height:550px !important;
+  margin: 0 auto;
+}
+
+.can-wrapper img {
+
+  display: none;
+}
+
+.can-wrapper img.active-can {
+  display: block;
+}
+
+.benefit-card {
+  position: absolute;
+  max-width: 440px;
+  padding: 40px;
+  border-radius: 14px;
+  color: #fff;
+  text-align: left;
+  opacity: 0;
+ 
+  transition: all .6s ease;
+  backdrop-filter: blur(10px);
+}
+
+.benefit-card.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.benefit-card img.icon {
+  max-width: 88px !important;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.benefit-card a {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 13px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Card Positions */
+.benefit-card[data-index="0"] { top: -60%; left: 0px; }
+.benefit-card[data-index="1"] { top: 40%; left: 0px; }
+.benefit-card[data-index="2"] { top: -30%; right: 0px; }
+.benefit-card[data-index="3"] { top: 40%; right: 0px; }
+.benefit-card[data-index="4"] { top: 40%; left: 0px;}
+
+
+
+@media only screen and (min-width:767px){
+
+
+
+
+
+
+
+}
+/* Mobile */
+@media(max-width: 768px){
+  #benefits-{{ section.id }} {
+    height: auto;
+  }
+
+  .benefits-inner {
+    position: relative;
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .can-wrapper {
+    width: 280px;
+    margin: 30px 0;
+  }
+
+  .benefit-card {
+    position: relative !important;
+    margin: 15px auto;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+.benefit-card {
+  border: 1px solid #FFFFFF;
+  width: 100%;
+}
+a.icon_link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 20px;
+}
+
+@media(max-width: 768px){
+
+  #benefits-{{ section.id }} {
+    height: 500vh;
+  }
+
+  .benefits-inner {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    padding: 40px 20px;
+    justify-content: center;
+  }
+
+  .benefits-heading {
+    position: relative;
+    top: auto;
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+
+  .can-wrapper {
+    width: 240px;
+    margin: 0 auto 30px auto;
+  }
+  a.icon_link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+}
+
+  /* Make cards slider style */
+  .benefit-card {
+    position: absolute !important;
+    width: 90%;
+    left: 50% !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+   
+    text-align: center;
+    opacity: 0;
+  }
+
+  .benefit-card.active {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+}
+</style>
+
+<div id="benefits-{{ section.id }}">
+  <div class="benefits-inner">
+
+    <div class="benefits-heading">
+      {{ section.settings.heading }}
+    </div>
+
+    <div class="can-wrapper">
+
+      <!-- 5 CAN IMAGES -->
+      <img class="can-img" data-can="0" src="{{ section.settings.can_image_1 | image_url }}" alt="">
+      <img class="can-img" data-can="1" src="{{ section.settings.can_image_2 | image_url }}" alt="">
+      <img class="can-img" data-can="2" src="{{ section.settings.can_image_3 | image_url }}" alt="">
+      <img class="can-img" data-can="3" src="{{ section.settings.can_image_4 | image_url }}" alt="">
+      <img class="can-img" data-can="4" src="{{ section.settings.can_image_5 | image_url }}" alt="">
+
+      {% for block in section.blocks %}
+        <div 
+          class="benefit-card"
+          data-index="{{ forloop.index0 }}"
+          style="
+            background-color: {{ block.settings.bg_color }};
+           
+          "
+        >
+          {% if block.settings.icon != blank %}
+            <img class="icon" src="{{ block.settings.icon | image_url }}">
+          {% endif %}
+          <h4>{{ block.settings.title }}</h4>
+          {% if block.settings.link != blank %}
+            <a href="{{ block.settings.link }}" class="icon_link">
+              <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20.5" cy="20.5" r="20" fill="white" stroke="black"/>
+                <path d="M11.25 24.701C10.5326 25.1152 10.2867 26.0326 10.701 26.75C11.1152 27.4674 12.0326 27.7133 12.75 27.299L12 26L11.25 24.701ZM30.7694 16.3882C30.9838 15.588 30.5089 14.7655 29.7087 14.5511L16.6687 11.0571C15.8685 10.8426 15.046 11.3175 14.8316 12.1177C14.6172 12.9179 15.0921 13.7404 15.8923 13.9548L27.4834 17.0607L24.3776 28.6518C24.1631 29.452 24.638 30.2745 25.4382 30.4889C26.2384 30.7033 27.0609 30.2284 27.2753 29.4282L30.7694 16.3882ZM12 26L12.75 27.299L30.0705 17.299L29.3205 16L28.5705 14.701L11.25 24.701L12 26Z" fill="black"/>
+                </svg>
+                    {{ block.settings.button_text }}   
+            </a>
+          {% endif %}
+        </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function(){
+    const section = document.getElementById("benefits-{{ section.id }}");
+    const cards = section.querySelectorAll(".benefit-card");
+    const cans = section.querySelectorAll(".can-img");
+  
+    function updateStep(step){
+
+      // Can (unchanged)
+      cans.forEach(can => can.classList.remove("active-can"));
+      if(cans[step]) cans[step].classList.add("active-can");
+    
+      // Cards stay visible while scrolling down
+      cards.forEach((card, index) => {
+        if(index <= step){
+          card.classList.add("active");
+        } else {
+          card.classList.remove("active");
+        }
+      });
+    
+      // Add freshactive ONLY to the newly active card
+      cards.forEach(card => card.classList.remove("freshactive"));
+      if(cards[step]) cards[step].classList.add("freshactive");
+    }
+  
+    updateStep(0);
+  
+    window.addEventListener("scroll", function(){
+      const rect = section.getBoundingClientRect();
+      const progress = Math.min(
+        Math.max((window.innerHeight - rect.top) / rect.height, 0),
+        1
+      );
+  
+      const step = Math.min(
+        Math.floor(progress * cards.length),
+        cards.length - 1
+      );
+  
+      updateStep(step);
+    });
+  });
+  </script>

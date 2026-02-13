@@ -319,6 +319,53 @@
         "padding-block-end": 48
       }
     },
+    "swiper_testimonals_GxzzzG": {
+      "type": "swiper_testimonals",
+      "blocks": {
+        "review_ytrBa3": {
+          "type": "review",
+          "settings": {
+            "avatar": "shopify://shop_images/Mask_group.png",
+            "review_text": "Gives me steady focus and mental clarity without feeling jittery.",
+            "stars": 1
+          }
+        },
+        "review_UjHAEh": {
+          "type": "review",
+          "settings": {
+            "avatar": "shopify://shop_images/Mask_group.png",
+            "review_text": "Gives me steady focus and mental clarity without feeling jittery.",
+            "stars": 5
+          }
+        },
+        "review_hkwRtU": {
+          "type": "review",
+          "settings": {
+            "avatar": "shopify://shop_images/Mask_group.png",
+            "review_text": "Gives me steady focus and mental clarity without feeling jittery.",
+            "stars": 5
+          }
+        },
+        "review_pbaD3G": {
+          "type": "review",
+          "settings": {
+            "avatar": "shopify://shop_images/Mask_group.png",
+            "review_text": "Gives me steady focus and mental clarity without feeling jittery.",
+            "stars": 1
+          }
+        }
+      },
+      "block_order": [
+        "review_ytrBa3",
+        "review_UjHAEh",
+        "review_hkwRtU",
+        "review_pbaD3G"
+      ],
+      "name": "Review Slider (Swiper)",
+      "settings": {
+        "heading": ""
+      }
+    },
     "divider_QaJ4pt": {
       "type": "divider",
       "name": "t:names.divider_section",
@@ -454,6 +501,241 @@
         "padding-block-start": 30,
         "padding-block-end": 24,
         "gap_between_elements": 58
+      }
+    },
+    "scroll_animtion_ktTwFX": {
+      "type": "scroll-animtion",
+      "blocks": {
+        "card_VrwrjT": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/Icon.png",
+            "title": "Calm, Controlled Energy",
+            "bg_color": "#343131",
+            "link": "#",
+            "button_text": "Learn More"
+          }
+        },
+        "card_4ip6xB": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/Icon.png",
+            "title": "Calm, Controlled Energy",
+            "bg_color": "#343131",
+            "link": "#",
+            "button_text": "Learn More"
+          }
+        },
+        "card_CHEK6X": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/Icon.png",
+            "title": "Calm, Controlled Energy",
+            "bg_color": "#343131",
+            "link": "#",
+            "button_text": "Learn More"
+          }
+        },
+        "card_rGd3NV": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/Icon.png",
+            "title": "Calm, Controlled Energy",
+            "bg_color": "#343131",
+            "link": "#",
+            "button_text": "Learn More"
+          }
+        },
+        "card_3MHHU8": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/Icon.png",
+            "title": "Calm, Controlled Energy",
+            "bg_color": "#343131",
+            "link": "#",
+            "button_text": "Learn More"
+          }
+        }
+      },
+      "block_order": [
+        "card_VrwrjT",
+        "card_4ip6xB",
+        "card_CHEK6X",
+        "card_rGd3NV",
+        "card_3MHHU8"
+      ],
+      "name": "Scroll Product Benefits",
+      "settings": {
+        "heading": "Product Benefits",
+        "background_image": "shopify://shop_images/Rectangle_17.png",
+        "can_image_1": "shopify://shop_images/Mantra_Brief.pdf-image-000_3.png",
+        "can_image_2": "shopify://shop_images/Mantra_Brief.pdf-image-002_1.png",
+        "can_image_3": "shopify://shop_images/Mantra_Brief.pdf-image-004_1.png",
+        "can_image_4": "shopify://shop_images/Mantra_Brief.pdf-image-000_4.png",
+        "can_image_5": "shopify://shop_images/Mantra_Brief.pdf-image-002_2.png"
+      }
+    },
+    "video_slider_section_z6Rw78": {
+      "type": "video_slider_section",
+      "blocks": {
+        "slide_hrTWr6": {
+          "type": "slide",
+          "settings": {
+            "slide_type": "image",
+            "image": "shopify://shop_images/Dribbble_shot_2.png",
+            "heading": "WHAT THIS IS",
+            "text": "This isn't an energy drink. It's productivity."
+          }
+        },
+        "slide_ARfjty": {
+          "type": "slide",
+          "settings": {
+            "slide_type": "video",
+            "video": "shopify://files/videos/output (1).mp4",
+            "video_thumbnail": "shopify://shop_images/Dribbble_shot_2.png",
+            "heading": "WHAT THIS IS",
+            "text": "This isn't an energy drink. It's productivity."
+          }
+        },
+        "slide_x6jcJU": {
+          "type": "slide",
+          "settings": {
+            "slide_type": "image",
+            "image": "shopify://shop_images/Dribbble_shot_2.png",
+            "heading": "WHAT THIS IS",
+            "text": "This isn't an energy drink. It's productivity."
+          }
+        },
+        "slide_ryqHbp": {
+          "type": "slide",
+          "settings": {
+            "slide_type": "image",
+            "image": "shopify://shop_images/Dribbble_shot_2.png",
+            "heading": "WHAT THIS IS",
+            "text": "This isn't an energy drink. It's productivity."
+          }
+        },
+        "slide_Q3ijPg": {
+          "type": "slide",
+          "settings": {
+            "slide_type": "image",
+            "image": "shopify://shop_images/Dribbble_shot_2.png",
+            "heading": "WHAT THIS IS",
+            "text": "This isn't an energy drink. It's productivity."
+          }
+        }
+      },
+      "block_order": [
+        "slide_hrTWr6",
+        "slide_ARfjty",
+        "slide_x6jcJU",
+        "slide_ryqHbp",
+        "slide_Q3ijPg"
+      ],
+      "name": "Custom Swiper Slider",
+      "settings": {
+        "title": "Built Into Real Routines",
+        "outer_bg_color": "#e9eef5",
+        "inner_bg_color": "#000000",
+        "inner_bg_image": "shopify://shop_images/Frame_427320835.png",
+        "title_color": "#111111",
+        "padding_top_desktop": 80,
+        "padding_bottom_desktop": 80,
+        "padding_top_tablet": 60,
+        "padding_bottom_tablet": 60,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "testimonials_carousel_DUfGrX": {
+      "type": "testimonials-carousel",
+      "blocks": {
+        "testimonial_LigaGK": {
+          "type": "testimonial",
+          "settings": {
+            "avatar": "shopify://shop_images/Rectangle_729.png",
+            "name": "Floyd Miles",
+            "subtitle": "",
+            "rating": 4,
+            "quote": "Most drinks push too hard and leave me feeling scattered.<br> This felt different — calmer, more controlled. I could stay with one task instead of jumping around.It fit into my day instead of interrupting it."
+          }
+        },
+        "testimonial_cp8JRt": {
+          "type": "testimonial",
+          "settings": {
+            "avatar": "shopify://shop_images/Rectangle_729.png",
+            "name": "Floyd Miles",
+            "subtitle": "",
+            "rating": 4,
+            "quote": "Most drinks push too hard and leave me feeling scattered.<br> This felt different — calmer, more controlled. I could stay with one task instead of jumping around.It fit into my day instead of interrupting it."
+          }
+        },
+        "testimonial_EQBFFQ": {
+          "type": "testimonial",
+          "settings": {
+            "avatar": "shopify://shop_images/Rectangle_729.png",
+            "name": "Floyd Miles",
+            "subtitle": "",
+            "rating": 4,
+            "quote": "Most drinks push too hard and leave me feeling scattered. This felt different — calmer, more controlled. I could stay with one task instead of jumping around."
+          }
+        },
+        "testimonial_B4TxwQ": {
+          "type": "testimonial",
+          "settings": {
+            "avatar": "shopify://shop_images/Rectangle_729.png",
+            "name": "Floyd Miles",
+            "subtitle": "",
+            "rating": 4,
+            "quote": "Most drinks push too hard and leave me feeling scattered. This felt different — calmer, more controlled. I could stay with one task instead of jumping around."
+          }
+        },
+        "testimonial_dTxVcQ": {
+          "type": "testimonial",
+          "settings": {
+            "avatar": "shopify://shop_images/Rectangle_729.png",
+            "name": "Floyd Miles",
+            "subtitle": "",
+            "rating": 4,
+            "quote": "Most drinks push too hard and leave me feeling scattered. This felt different — calmer, more controlled. I could stay with one task instead of jumping around."
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_LigaGK",
+        "testimonial_cp8JRt",
+        "testimonial_EQBFFQ",
+        "testimonial_B4TxwQ",
+        "testimonial_dTxVcQ"
+      ],
+      "name": "Testimonials carousel",
+      "settings": {
+        "heading": "What People Are Saying",
+        "background_image": "shopify://shop_images/c93272e6-1dd9-4fae-b874-5c573da1e98d_1_1.png",
+        "section_bg": "#f6f6f6",
+        "bg_overlay_opacity": 0,
+        "padding_top_desktop": 100,
+        "padding_bottom_desktop": 200,
+        "padding_left_desktop": 60,
+        "padding_right_desktop": 0,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40,
+        "padding_left_mobile": 60,
+        "padding_right_mobile": 16,
+        "heading_size_desktop": 96,
+        "heading_line_height_desktop": 1.2,
+        "name_size_desktop": 30,
+        "subtitle_size_desktop": 13,
+        "quote_size_desktop": 21,
+        "quote_line_height_desktop": 1.4,
+        "heading_size_mobile": 28,
+        "heading_line_height_mobile": 1.2,
+        "name_size_mobile": 15,
+        "subtitle_size_mobile": 12,
+        "quote_size_mobile": 13,
+        "quote_line_height_mobile": 1.6,
+        "heading_weight": 400,
+        "name_weight": 600
       }
     },
     "section_XBTr8x": {
@@ -648,97 +930,6 @@
         "gradient_direction": "to top",
         "padding-block-start": 0,
         "padding-block-end": 0
-      }
-    },
-    "testimonials_carousel_DUfGrX": {
-      "type": "testimonials-carousel",
-      "blocks": {
-        "testimonial_LigaGK": {
-          "type": "testimonial",
-          "settings": {
-            "avatar": "shopify://shop_images/Rectangle_729.png",
-            "name": "Floyd Miles",
-            "subtitle": "",
-            "rating": 4,
-            "quote": "Most drinks push too hard and leave me feeling scattered.<br> This felt different — calmer, more controlled. I could stay with one task instead of jumping around.It fit into my day instead of interrupting it."
-          }
-        },
-        "testimonial_cp8JRt": {
-          "type": "testimonial",
-          "settings": {
-            "avatar": "shopify://shop_images/Rectangle_729.png",
-            "name": "Floyd Miles",
-            "subtitle": "",
-            "rating": 4,
-            "quote": "Most drinks push too hard and leave me feeling scattered.<br> This felt different — calmer, more controlled. I could stay with one task instead of jumping around.It fit into my day instead of interrupting it."
-          }
-        },
-        "testimonial_EQBFFQ": {
-          "type": "testimonial",
-          "settings": {
-            "avatar": "shopify://shop_images/Rectangle_729.png",
-            "name": "Floyd Miles",
-            "subtitle": "",
-            "rating": 4,
-            "quote": "Most drinks push too hard and leave me feeling scattered. This felt different — calmer, more controlled. I could stay with one task instead of jumping around."
-          }
-        },
-        "testimonial_B4TxwQ": {
-          "type": "testimonial",
-          "settings": {
-            "avatar": "shopify://shop_images/Rectangle_729.png",
-            "name": "Floyd Miles",
-            "subtitle": "",
-            "rating": 4,
-            "quote": "Most drinks push too hard and leave me feeling scattered. This felt different — calmer, more controlled. I could stay with one task instead of jumping around."
-          }
-        },
-        "testimonial_dTxVcQ": {
-          "type": "testimonial",
-          "settings": {
-            "avatar": "shopify://shop_images/Rectangle_729.png",
-            "name": "Floyd Miles",
-            "subtitle": "",
-            "rating": 4,
-            "quote": "Most drinks push too hard and leave me feeling scattered. This felt different — calmer, more controlled. I could stay with one task instead of jumping around."
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_LigaGK",
-        "testimonial_cp8JRt",
-        "testimonial_EQBFFQ",
-        "testimonial_B4TxwQ",
-        "testimonial_dTxVcQ"
-      ],
-      "name": "Testimonials carousel",
-      "settings": {
-        "heading": "What People Are Saying",
-        "background_image": "shopify://shop_images/c93272e6-1dd9-4fae-b874-5c573da1e98d_1_1.png",
-        "section_bg": "#f6f6f6",
-        "bg_overlay_opacity": 0,
-        "padding_top_desktop": 100,
-        "padding_bottom_desktop": 200,
-        "padding_left_desktop": 60,
-        "padding_right_desktop": 0,
-        "padding_top_mobile": 40,
-        "padding_bottom_mobile": 40,
-        "padding_left_mobile": 60,
-        "padding_right_mobile": 16,
-        "heading_size_desktop": 96,
-        "heading_line_height_desktop": 1.2,
-        "name_size_desktop": 30,
-        "subtitle_size_desktop": 13,
-        "quote_size_desktop": 21,
-        "quote_line_height_desktop": 1.4,
-        "heading_size_mobile": 28,
-        "heading_line_height_mobile": 1.2,
-        "name_size_mobile": 15,
-        "subtitle_size_mobile": 12,
-        "quote_size_mobile": 13,
-        "quote_line_height_mobile": 1.6,
-        "heading_weight": 400,
-        "name_weight": 600
       }
     },
     "section_zJXTf6": {
@@ -1704,11 +1895,14 @@
   "order": [
     "hero_jVaWmY",
     "product_list_fa6P9H",
+    "swiper_testimonals_GxzzzG",
     "divider_QaJ4pt",
     "marquee_ztGitN",
+    "scroll_animtion_ktTwFX",
+    "video_slider_section_z6Rw78",
+    "testimonials_carousel_DUfGrX",
     "section_XBTr8x",
     "section_AG8N6h",
-    "testimonials_carousel_DUfGrX",
     "section_zJXTf6",
     "section_zTGUGx",
     "divider_RyDCba",
